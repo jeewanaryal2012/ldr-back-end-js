@@ -1,4 +1,9 @@
 const express = require("express");
+const path = require('path');
+var __importDefault = (this && this.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+var express_1 = __importDefault(require("express"));
 
 require("dotenv").config();
 
@@ -7,9 +12,11 @@ let Users = require("./data/users");
 const app = express();
 
 app.use(express.json());
-
-app.get("/", (req, res) => {
-  res.json({ status: "success", message: "Welcome to Node API!!!" });
+app.use(express_1.default.static(__dirname + '/dist/payment-project'));
+app.get("/home", (req, res) => {
+  //res.json({ status: "success", message: "Welcome to Node API!!!" });
+  res.sendFile(path.join(__dirname + '/dist/payment-project/index.html'));
+  //res.sendFile('./dist/payment-project/index.html');
 });
 
 app.get("/api/users", (req, res) => {

@@ -1,8 +1,8 @@
 module.exports = [
   {
     id: 1,
-    firstName: "Ezekiel",
-    lastName: "Ekunola"
+    firstName: "Jeewan",
+    lastName: "Aryal"
   },
   {
     id: 2,
