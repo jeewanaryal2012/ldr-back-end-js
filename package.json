@@ -1,23 +1,28 @@
 {
-  "name": "ldr-back-end-js",
+  "name": "api-deploy",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "engines": {
-    "node": "10.15.0"
+  "description": "Node API",
+  "main": "app.js",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   },
   "scripts": {
-    "start": "node src/server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app",
+    "server": "nodemon app"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jeewanaryal2012/ldr-back-end-js.git"
+    "url": "git+https://github.com/Easybuoy/node-api-deploy.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Ezekiel Ekunola",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jeewanaryal2012/ldr-back-end-js/issues"
+    "url": "https://github.com/Easybuoy/node-api-deploy/issues"
   },
-  "homepage": "https://github.com/jeewanaryal2012/ldr-back-end-js#readme"
+  "homepage": "https://github.com/Easybuoy/node-api-deploy#readme"
 }
