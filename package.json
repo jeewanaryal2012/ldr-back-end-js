@@ -1,0 +1,20 @@
+{
+  "name": "ldr-back-end-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeewanaryal2012/ldr-back-end-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeewanaryal2012/ldr-back-end-js/issues"
+  },
+  "homepage": "https://github.com/jeewanaryal2012/ldr-back-end-js#readme"
+}
