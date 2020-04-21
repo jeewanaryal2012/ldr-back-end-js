@@ -15,7 +15,8 @@ app.use(express.json());
 app.use(express_1.default.static(__dirname + '/dist/payment-project'));
 app.get("/home", (req, res) => {
   //res.json({ status: "success", message: "Welcome to Node API!!!" });
-  res.sendFile(path.join(__dirname + '/dist/payment-project/index.html'));
+  //res.sendFile(path.join(__dirname + '/dist/payment-project/index.html'));
+  res.sendFile(path.join(__dirname + '/dist/cvd-cleaners/index.html'));
   //res.sendFile('./dist/payment-project/index.html');
 });
 
